@@ -1,0 +1,363 @@
+.app-shell {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #f6f7fb;
+  color: #1f2937;
+  padding: 20px 16px 80px;
+  box-sizing: border-box;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.topbar h2 {
+  margin: 4px 0 0;
+  font-size: 1.6rem;
+}
+
+.link-btn {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.summary-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.summary-card span {
+  color: #6b7280;
+  font-size: 0.82rem;
+}
+
+.summary-card strong {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.balance-card {
+  background: linear-gradient(135deg, #111827, #374151);
+  color: white;
+}
+
+.balance-card span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.income-card strong {
+  color: #16a34a;
+}
+
+.expense-card strong {
+  color: #dc2626;
+}
+
+.action-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.primary-btn,
+.secondary-btn,
+.auth-toggle button {
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.2);
+}
+
+.secondary-btn {
+  background: #e5e7eb;
+  color: #111827;
+  padding: 12px 18px;
+}
+
+.transaction-form,
+.auth-card {
+  background: white;
+  border-radius: 22px;
+  padding: 22px 18px;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.transaction-form h3,
+.section-header h3 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+}
+
+.transaction-form label,
+.auth-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: #374151;
+}
+
+.transaction-form input,
+.transaction-form select,
+.auth-form input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dbe3f0;
+  background: #f9fafb;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 0.98rem;
+}
+
+.double-field {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.history-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  background: white;
+  border-radius: 18px;
+  padding: 14px 16px;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.04);
+}
+
+.history-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: start;
+}
+
+.history-main h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.history-main p,
+.history-meta {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+
+.history-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.pill {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+}
+
+.amount {
+  font-weight: 700;
+  font-size: 0.96rem;
+}
+
+.income {
+  color: #16a34a;
+}
+
+.expense {
+  color: #dc2626;
+}
+
+.empty-state {
+  text-align: center;
+  color: #6b7280;
+  background: white;
+  border-radius: 18px;
+  padding: 26px 16px;
+}
+
+.auth-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eff6ff, #f8fafc);
+  padding: 20px;
+}
+
+.auth-card {
+  width: min(100%, 440px);
+}
+
+.brand-block {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.brand-block h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.brand-block p {
+  margin: 8px 0 0;
+  color: #6b7280;
+}
+
+.auth-toggle {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  background: #eef2ff;
+  border-radius: 14px;
+  padding: 6px;
+  margin-bottom: 18px;
+}
+
+.auth-toggle button {
+  background: transparent;
+  padding: 10px 14px;
+  color: #374151;
+}
+
+.auth-toggle button.active {
+  background: white;
+  color: #111827;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.06);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-form .primary-btn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.error-text {
+  margin: 0;
+  color: #dc2626;
+  font-size: 0.8rem;
+}
+
+.demo-box {
+  margin-top: 22px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  padding: 12px 14px;
+  color: #334155;
+}
+
+.demo-box p {
+  margin: 4px 0 0;
+}
+
+.status-banner {
+  margin-bottom: 14px;
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  color: #9a4d00;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 420px) {
+  .app-shell {
+    padding-inline: 12px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .double-field {
+    grid-template-columns: 1fr;
+  }
+}
